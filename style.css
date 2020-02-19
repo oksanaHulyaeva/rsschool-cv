@@ -1,7 +1,7 @@
 main, header {
     margin: 0 auto;
     max-width: 1024px;
-    font-family: Raleway, sans-serif;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
     color: #424242;
 
 }
@@ -12,6 +12,12 @@ main, header {
     border-radius: 50%;
     background-position: center;
     float: right;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	transition: 0.3s;
+}
+
+.pic:hover {
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 h1, h4 {
