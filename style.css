@@ -1,8 +1,9 @@
+/* COMMON */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 20px;
   font-family: sans-serif;
 }
 
@@ -11,12 +12,18 @@ body {
 }
 
 .accent {
-    color: #FA625C;
+  color: #FA625C;
 }
 
 a {
   text-decoration: none;
 }
+
+li{
+  list-style-type: none;
+}
+
+/* LAYOUT */
 
 .container {
   width: 100%;
@@ -27,112 +34,151 @@ a {
 .left-container {
   width: 30%;
   background-color: #343434;
-  min-height: 500px;
   display: flex;
   justify-content: flex-end;
   padding-top: 50px;
 }
 
 .right-container {
-    width: 70%;
-    min-height: 500px;
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 50px;
-  }
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 50px;
+}
 
 .left-content {
-    width: 80%;
-    min-width: 200px;
-    max-width: 450px;
-    min-height: 400px;
-    padding: 10px 30px;
+  width: 80%;
+  min-width: 300px;
+  max-width: 450px;
+  padding: 10px 30px;
 }
 
 .right-content {
-    width: 90%;
-    min-width: 400px;
-    max-width: 900px;
-    min-height: 400px;
-    border: 1px solid grey;
-    padding: 10px 30px;
+  width: 90%;
+  min-width: 500px;
+  max-width: 900px;
+  padding: 10px 50px;
 }
+
+/* SECTIONS */
 
 h1,
 h1 span.accent {
   font-family: 'Alegreya SC', serif;
   font-weight: 700;
   letter-spacing: 4px;
-  font-size: 7rem;
-  line-height: 7.75rem;
+  font-size: 3rem;
+  line-height: 3.85rem;
 }
 
 h3 {
-    font-family: 'Alegreya SC', serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-  }
+  font-family: 'Alegreya SC', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
 
 section {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 section p,
 section a,
 section li,
-section span {
-  font-size: 2rem;
+section span,
+section h4 {
+  line-height: 1.7rem;
 }
 
 .left-container section a,
 .left-container section p
  {
   color: #F2F4F5;
-  font-size: 2rem;
 }
 
 .left-content h3 {
-    color: #F2F4F5;
-    border-top: 2px solid #F2F4F5;
-    border-bottom: 2px solid #F2F4F5;
-  }
+  color: #F2F4F5;
+  border-top: 2px solid #F2F4F5;
+  border-bottom: 2px solid #F2F4F5;
+}
   
-  .right-container h3 {
-    color: #343434;
-    border-top: 2px solid #343434;
-    border-bottom: 2px solid #343434;
-  }
+.right-container h3 {
+  color: #343434;
+  border-top: 2px solid #343434;
+  border-bottom: 2px solid #343434;
+}
+
+/* AVATAR */
 
 .avatar {
-    width: 150px;
-    height: 150px;
-    background-image: url('ava.png');
-    background-size: cover;
-    border-radius: 50%;
-    border: 4px solid #E5E7E9;
+  width: 150px;
+  height: 150px;
+  background-image: url('ava.png');
+  background-size: cover;
+  border-radius: 50%;
+  border: 4px solid #E5E7E9;
+}
   
-  }
-  
-  .outer-avatar {
-    width: 155px;
-    height: 155px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color: #5c6163;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.outer-avatar {
+  width: 155px;
+  height: 155px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #5c6163;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .contacts li {
-    display: flex;
-    margin-bottom: 1.4rem;
-  }
-  
-  .contacts a:hover {
-    color: #FA625C;
-  }
+/* CONTACTS */
 
+.contacts li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+  
+.contacts a:hover {
+  color: #FA625C;
+}
+
+/* EDUCATION */
+
+.education-period {
+  color:#817e80 !important;
+  margin-bottom: 30px;
+}
+
+/* SKILLS */
+
+.flex-2-columns {
+  display: flex;
+  margin-bottom: 20px;
+}
+  
+.flex-2-columns .left {
+  min-width: 170px;
+  font-weight: 700;
+}
+
+.flex-2-columns li {
+  margin-bottom: 10px;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.duties {
+  margin-top: 30px;
+}
+  
+.duties li {
+  list-style-type: square;
+}
