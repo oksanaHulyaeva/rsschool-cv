@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-size: 20px;
   font-family: sans-serif;
+  transition: ease-out .4s;
 }
 
 body {
@@ -47,7 +48,7 @@ li{
 }
 
 .left-content {
-  width: 80%;
+  width: 82%;
   min-width: 300px;
   max-width: 450px;
   padding: 10px 30px;
@@ -139,14 +140,15 @@ section h4 {
   margin-bottom: 1rem;
 }
   
-.contacts a:hover {
+.contacts a:hover,
+.fa-github:hover {
   color: #FA625C;
 }
 
 /* EDUCATION */
 
 .education-period {
-  color:#817e80 !important;
+  color: #817e80;
   margin-bottom: 30px;
 }
 
@@ -182,3 +184,40 @@ section h4 {
 .duties li {
   list-style-type: square;
 }
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  min-height: 150px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div,
+footer p,
+footer a {
+  margin: 0 50px;
+  font-size: .8rem;
+}
+
+.rss-link {
+  display:  block;
+  width: 60px;
+  height: 30px;
+  background-image: url('rss.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.rss-link:hover {
+  background-image: url('rss-hover.svg');
+}
+
+.fa-github {
+  color: black;
+}
+
