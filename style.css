@@ -61,6 +61,24 @@ li{
   padding: 10px 50px;
 }
 
+.left-container section a,
+.left-container section p
+ {
+  color: #F2F4F5;
+}
+
+.left-content h3 {
+  color: #F2F4F5;
+  border-top: 2px solid #F2F4F5;
+  border-bottom: 2px solid #F2F4F5;
+}
+  
+.right-container h3 {
+  color: #343434;
+  border-top: 2px solid #343434;
+  border-bottom: 2px solid #343434;
+}
+
 /* SECTIONS */
 
 h1,
@@ -91,24 +109,6 @@ section li,
 section span,
 section h4 {
   line-height: 1.7rem;
-}
-
-.left-container section a,
-.left-container section p
- {
-  color: #F2F4F5;
-}
-
-.left-content h3 {
-  color: #F2F4F5;
-  border-top: 2px solid #F2F4F5;
-  border-bottom: 2px solid #F2F4F5;
-}
-  
-.right-container h3 {
-  color: #343434;
-  border-top: 2px solid #343434;
-  border-bottom: 2px solid #343434;
 }
 
 /* AVATAR */
@@ -220,4 +220,3 @@ footer a {
 .fa-github {
   color: black;
 }
-
