@@ -8,10 +8,12 @@
   transition: ease-out .4s;
 }
 
-body {
+body,
+mark {
   background-color: #F2F4F5;
 }
 
+mark,
 .accent {
   color: #FA625C;
 }
@@ -54,7 +56,7 @@ li{
   padding: 10px 30px;
 }
 
-.right-content {
+main {
   width: 90%;
   min-width: 500px;
   max-width: 900px;
@@ -116,10 +118,16 @@ section h4 {
 .avatar {
   width: 150px;
   height: 150px;
-  background-image: url('ava.png');
-  background-size: cover;
+  /* background-image: url('ava.png');
+  background-size: cover; */
+  overflow: hidden;
   border-radius: 50%;
   border: 4px solid #E5E7E9;
+}
+
+img.avatar {
+  object-fit: cover;
+  border: none;
 }
   
 .outer-avatar {
